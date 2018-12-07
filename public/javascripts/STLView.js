@@ -196,7 +196,7 @@ function init() {
     scene = new THREE.Scene();
 
     camera = new THREE.PerspectiveCamera( 100, window.innerWidth / window.innerHeight, 0.1, 10000);
-    camera.position.z = 100;
+    camera.position.z = 200;
     camera.position.y = 0;
     scene.add( camera );
 
@@ -223,7 +223,7 @@ function init() {
         console.log(e);
     }
 
-    xhr.open( "GET", '/models/Pteranodon_skull.stl', true );
+    xhr.open( "GET", '/models/skull.stl', true );
     xhr.responseType = "arraybuffer";
     xhr.send( null );
 
